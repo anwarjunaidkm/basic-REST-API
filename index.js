@@ -23,7 +23,7 @@ app.use(authRoutes);
 app.use(isAuth, blogRoutes);
 mongoose
   .connect(
-    "mongodb+srv://mynode:mynode@cluster0.jf4vffa.mongodb.net/anwar?retryWrites=true&w=majority"
+    "DB URL"
   )
   .then((result) => {
     app.listen(3000, () => {
